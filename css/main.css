@@ -363,7 +363,7 @@ font-family: 'Ubuntu', sans-serif;
 
 }
 
-.redes:hover {}
+
 
 .redes img {
     width: 50px;
@@ -608,8 +608,6 @@ height: 30%;
     font-size: 35px;
     text-shadow: var(--color5) 5px 5px 5px;
 }
-
-.tit-serv-texto {}
 
 .best-night {
     font-size: 32px;
