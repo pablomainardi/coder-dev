@@ -18,7 +18,8 @@ font-family: 'Tauri', sans-serif;
     --color1: #f9e9e7;
 }
 
-html , body {
+html,
+body {
     background-color: var(--color4);
 }
 
@@ -64,16 +65,16 @@ html , body {
 
     font-family: 'Jomhuria', cursive;
     font-family: 'Buda', cursive;
-font-family: 'Cantora One', sans-serif;
-font-family: 'Caveat', cursive;
+    font-family: 'Cantora One', sans-serif;
+    font-family: 'Caveat', cursive;
 
 
     font-weight: bold;
     padding-top: 5px;
-   
+
 
     margin-top: 10px;
-    
+
     /*
     border-radius: 0 90% 0 90%; */
     text-shadow: var(--color1) 0 5px 20px;
@@ -130,6 +131,8 @@ font-family: 'Caveat', cursive;
 .nav-box {
     font-family: 'Cantora One', sans-serif;
     letter-spacing: 1px;
+    align-content: flex-start;
+
 
 }
 
@@ -139,19 +142,23 @@ font-family: 'Caveat', cursive;
 
 }
 
-#menu-nav-flex {
+.boton-flex-derecha , #boton-flex-derecha {
     justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
 }
 
 
-.logo {
 
+.logo {
+    text-align: center;
     /*
     position: relative;
     bottom: -60px;*/
 
     border-radius: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
+    
     /*
     animation-name: logo-move;
     animation-duration: 2s;
@@ -245,7 +252,7 @@ font-family: 'Caveat', cursive;
     /*comida rica y autentica*/
     color: #ccc;
     font-family: 'Kalam', cursive;
-    margin: 15px 0;
+
 }
 
 .main-portada {
@@ -261,8 +268,8 @@ font-family: 'Caveat', cursive;
 
 }
 
-.portada-section {
-    justify-items: center;
+.titulo { /*div con logo y leyenda*/
+   text-align: center;
 }
 
 
@@ -286,9 +293,9 @@ font-family: 'Caveat', cursive;
 }
 
 .redes img {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
 }
 
 .redes img {

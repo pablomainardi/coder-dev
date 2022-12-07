@@ -15,7 +15,7 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <title>MarchandoFoodCo</title>
-    <link rel="shortcut icon" href="../image/ico_marchando.png">
+    <link rel="shortcut icon" href="./image/ico_marchando.png">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,62 +26,69 @@
 <body class="container">
 
     <header class="row top1">
+        <div class="col-7 titulo"> 
 
+            <a class="logo-box col navbar-brand" href="../index.html">
+                <img class="heartbeat logo img-fluid" src="../image/logo1-135px.jpg" width="180px" alt="Logo de Marchando Food Co">
+            </a>
+            <div class="leyenda">
+                <h2 class="leyenda slide-in-blurred-left">Comida rica y auténtica!</h2>
+            </div>
+         
+        </div>
       
-        <nav class="col nav-box navbar navbar-expand-md navbar-dark bg-transparent">
-            <div class="container-fluid">
-                <div class="col presentacion slide-in-blurred-left">
-                    <h1 class="marchando">Marchando<h1>
-                            <h2 class="foodco">Food Co</h2>
-                </div>
-                <button class="boton-flex navbar-toggler" type="button" data-bs-toggle="collapse"
+        <nav class="col-5 nav-box navbar navbar-expand-md navbar-dark bg-transparent">
+            <div class="container-fluid" id="boton-flex-derecha">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#menu-nav-flex">
                     <span class="navbar-toggler-icon">
                     </span>
                 </button>
 
                 <div class="collapse navbar-collapse menu-flex" id="menu-nav-flex">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                    <ul class="navbar-nav boton-flex-derecha">
+                        <li class="hover-link nav-item">
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="hover-link nav-item">
                             <a class="nav-link" href="./servicios.html">Servicios</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="hover-link nav-item">
                             <a class="nav-link" href="./eventos.html">Eventos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="hover-link nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+          
     </header>
+
+
     <main class="main-portada row">
 
         <div>NOSOTROS</div>
 
 
-        <section class="portada-section">
-
-            <a class="logo-box col navbar-brand" href="../index.html">
-                <img class="heartbeat logo img-fluid" src="../image/logo1-135px.jpg" width="180px" alt="Logo de Marchando Food Co">
-            </a>
-
-            <div class="leyenda">
-                <h2 class="leyenda">Comida rica y auténtica!</h2>
-            </div>
-        </section>
+       
     </main>
+
+
+
     <footer class="footer row">
         <div class="col redes">
-            <a href="https://www.facebook.com/marchando.co/" target="_blank"><img class="img-fluid" src="../image/facebook.png"
+            <div class="col presentacion">
+                <h1 class="marchando">Marchando<h1>
+                        <h2 class="foodco">Food Co</h2>
+            </div>
+            <a href="https://www.facebook.com/marchando.co/" target="_blank"><img class="img-fluid" src="../image/r-facebook.png"
                     alt="Logo de Facebook" width="80px"></a>
-            <a href="https://www.instagram.com/marchando.co/?hl=es" target="_blank"><img class="img-fluid" src="../image/instagram.png"
+            <a href="https://www.instagram.com/marchando.co/?hl=es" target="_blank"><img class="img-fluid" src="../image/r-instagram.png"
                     alt="Logo de Instagram" width="80px"></a>
-            <a href="https://mobile.twitter.com/marchandoco" target="_blank"><img class="img-fluid" src="../image/twitter.png"
+            <a href="https://mobile.twitter.com/marchandoco" target="_blank"><img class="img-fluid" src="../image/r-twitter.png"
                     alt="Logo de Twitter" width="80px"></a>
         </div>
         <article class="col-md-7 article">
@@ -92,7 +99,6 @@
 
 
     </footer>
-
 
 
 
