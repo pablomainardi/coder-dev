@@ -1,468 +1,101 @@
-/*mobile*/
-@media only screen and (min-width: 401px) and (max-width: 767px) {
-
-
-    /*  .main-container {
-        grid-column: 1/4;
-        grid-row: 2 / 4;
-    } */
-}
-
-/*tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
-
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Buda', cursive;
+font-family: 'Cantora One', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'DM Mono', monospace;
+font-family: 'Halant', serif;
+font-family: 'Jomhuria', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Tauri', sans-serif;
+*/
 :root {
     --color5: #303030;
-    --color4: #444;
+    --color4: #111;
     --color3: #e6a219;
     --color2: #c7262b;
     --color1: #f9e9e7;
 }
 
-/*
-:root {
-    --color5: #c7262b ;
---color4: #e44e48 ;
---color3: #e6a219 ;
---color2:  #d2704b ;
---color1:  #f9e9e7 ; 
-}
-
-/*
-:root {
-    --color5: #BA181B ;
---color4: #189 ;
---color3: #999 ;
---color2:  #355 ;
---color1:  #f9e9e7 ; 
-}
-*/
-
 html {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-
-}
-
-
-body {
     background-color: var(--color4);
-    /* #c7262b;*/
-    margin: 0 0;
-    padding: 0 0;
-    display: flex;
-
-    text-align: center;
-    height: 100vh;
 }
-
 
 *::selection {
-    background-color: #222;
-}
-
-
-/*///////GRILLA//////*/
-
-
-/* 
-blanco: #f9e9e7
-rojo logo: #c7262b
-rojo piel: #d2704b
-rojo main: #e44e48
-/*
-font-family: 'Akaya Telivigala', cursive;
-font-family: 'Anaheim', sans-serif;
-font-family: 'Caveat', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Noto Serif Oriya', serif;
-font-family: 'Ubuntu', sans-serif;
-
-*/
-
-/*barra lateral*/
-.fixed-box {
-
-    width: 250px;
-    flex-grow: 0;
-    flex-basis: 250px;
     background-color: var(--color5);
-    font-family: 'Cinzel', serif;
-    height: 100vh;
-    border-radius: 50% 0 0 0;
-
+    color: var(--color4);
 }
 
+.hover-link a {
 
-/*Contenedor Main*/
-.main-container {
-    display: grid;
-    grid-template-rows: 1f 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: inline-block;
     position: relative;
-    justify-items: stretch;
-    align-items: stretch;
-    flex-grow: 4;
-    font-family: 'Akaya Telivigala', cursive;
-    margin: 0px;
-    padding: 0px;
-
-}
-
-/*
-header {
-    /*flex item*/
-
-/*
-
-  font-family: 'Akaya Telivigala', cursive;
-font-family: 'Anaheim', sans-serif;
-font-family: 'Caveat', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Noto Serif Oriya', serif;
-font-family: 'Ubuntu', sans-serif; 
-*/
-
-.logo {
-
-    border-radius: 100%;
-    margin: 2px 2px;
-    animation-name: logo-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    border: 2px solid var(--color1);
-
-}
-
-@keyframes logo-move {
-    0% {
-        border: none;
-        transform: translate(0, -300px);
-    }
-
-    50% {
-        transform: rotate(180deg);
-        transform: scale(.5);
-    }
-
-    70% {
-        transform: scale(1.3);
-
-    }
-
-    95% {
-        transform: scale(1);
-        border: 7px solid var(--color1);
-    }
-
-    100% {
-        border: 2px solid var(--color1);
-        rotate: 5turn;
-    }
-}
-
-.barra-nav {
-    box-sizing: border-box;
-    border-radius: 0 70% 70% 0;
-    animation-name: nav-move;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes nav-move {
-    0% {
-        transform: translateX(-250px);
-    }
-
-    50% {
-
-        transform: scale(.5);
-    }
-
-    70% {}
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-.barra-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-
-    margin: 5px auto;
-    padding: 5px;
-
-
-
-
-
-
-}
-
-.barra-nav li {
-    padding: 4px;
-    box-sizing: border-box;
-
-    /*width: 100%;*/
-
-
-}
-
-.barra-nav a {
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 600;
     color: var(--color1);
-    padding: 7px;
-    letter-spacing: 2px;
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.barra-nav a:hover {
-    color: #222;
-    padding-left: 0;
-
+.hover-link a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
 }
 
-.barra-nav li:hover {
-
-    box-shadow: #c7262b 2px 2px 2px;
-    transition: .3s;
-}
-
-.barra-nav li:active {
-
-
-    transition: .3s;
-    border-left: 24px solid var(--color5);
-
+.hover-link a:hover:after {
+    width: 100%;
+    background: var(--color1);
 }
 
 
-
-.leyenda {
-    /*flex item*/
-text-align: center;    
-    color: #c7262b;
-    height: 25%;
-    background-color: #444;
-    margin: 0;
-    font-size: 18px;
-padding: 5px 0px;
-
-
-line-height: 1.5;
-    /*font-family: 'Anaheim', sans-serif;*/
-    font-family:Arial, Helvetica, sans-serif;
-    animation-name: article-move;
-    animation-duration: 2.5s;
-    animation-timing-function: ease;
-    user-select: none;
+.top1 {
+    /*header*/
+    height: max-content;
+    background-color: var(--color4);
 }
 
-
-
-.article p {
-    font-size: 13px;
+.presentacion {
+    /*section con marchando food co y comida rica y autentica*/
     text-align: center;
-    font-family: 'Anaheim', sans-serif;
-    font-weight: 600;
-}
-
-@keyframes article-move {
-    0% {
-        transform: translateY(-1000px);
-    }
-
-    50% {
-
-        transform: scale(.5);
-    }
-
-    70% {
-        transform: scale(1.1);
-
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-.article p:first-child {
-    border-bottom: 3px solid var(--color5);
-    border-width: 2px;
-
-
-    border-bottom-right-radius: 40%;
-    padding: 3px 10px 3px 3px;
-    /*border-right: .2    em solid #c7262b;*/
-
-}
-
-/*
-
-  font-family: 'Akaya Telivigala', cursive;
-font-family: 'Anaheim', sans-serif;
-font-family: 'Caveat', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Noto Serif Oriya', serif;
-font-family: 'Ubuntu', sans-serif; 
-*/
-
-.footer {
-    /*flex item*/
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
     color: var(--color2);
-    animation-name: footer-move;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-}
 
-
-@keyframes footer-move {
-    0% {
-        transform: translate(1500px, -500px);
-
-    }
-
-    50% {
-
-        transform: scale(.5);
-    }
-
-    70% {
-        transform: scale(1.1);
-
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-.redes {
-    margin: 3px;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    border: 3px solid var(--color2);
-    border-radius: 0% 0 50% 50%;
-
-
-}
-
-
-
-.redes img {
-    width: 50px;
-    opacity: 40%;
-    animation-name: icoredes-move;
-
-    animation-delay: 3s;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
-    transition: transform 2s;
-}
-
-@keyframes icoredes-move {
-    0% {
-        transform: scale(1);
-
-    }
-
-    25% {
-        transform: scale(.5);
-
-    }
-
-    50% {
-        transform: scale(1);
-
-    }
-
-    75% {
-        transform: scale(.5);
-
-    }
-
-    100% {
-        transform: scale(1);
-    }
-
-}
-
-
-.redes img:hover {
-    /*ver animation*/
-    opacity: 100%;
-    transition: .4s;
-    transform: scale(1.3);
-}
-
-
-/*main container*******************************************/
-/*main container*******************************************/
-/*
-
-  font-family: 'Akaya Telivigala', cursive;
-font-family: 'Anaheim', sans-serif;
+    font-family: 'Jomhuria', cursive;
+    font-family: 'Buda', cursive;
+font-family: 'Cantora One', sans-serif;
 font-family: 'Caveat', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Noto Serif Oriya', serif;
-font-family: 'Ubuntu', sans-serif; 
-*/
 
+
+    font-weight: bold;
+    padding-top: 5px;
+   
+
+    margin-top: 10px;
+    
+    /*
+    border-radius: 0 90% 0 90%; */
+    text-shadow: var(--color1) 0 5px 20px;
+}
+
+.foodco {
+    line-height: .5;
+    font-size: 22px;
+}
 
 .marchando {
-    /*div flex-item de main-container*/
-
-    position: absolute;
-    bottom: 0;
-    right: 50px;
-    line-height: 0;
-
-}
-
-.bounce-in-top {
-    animation: bounce-in-top 1s 2s both;
-    ;
+    font-size: 60px;
+    line-height: .6;
+    letter-spacing: 2px;
 }
 
 
-
-.titulo-main {
-    font-family: 'Cinzel', serif;
-    font-size: 62px;
-    font-weight: bolder;
-    text-shadow: var(--color5) 0px 0px 10px;
-
+.slide-in-blurred-left {
+    animation: slide-in-blurred-left 1.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
-
-.marchando h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 33px;
-    font-weight: bolder;
-    text-shadow: var(--color5) 0px 0px 10px;
-
-}
-
-
 
 /* ----------------------------------------------
- * Generated by Animista on 2022-11-23 23:10:53
+ * Generated by Animista on 2022-12-7 2:38:48
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
@@ -470,202 +103,202 @@ font-family: 'Ubuntu', sans-serif;
 
 /**
  * ----------------------------------------
- * animation bounce-in-top
+ * animation slide-in-blurred-left
  * ----------------------------------------
  */
-
-@keyframes bounce-in-top {
+@keyframes slide-in-blurred-left {
     0% {
-        transform: translateY(-500px);
-        animation-timing-function: ease-in;
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform-origin: 100% 50%;
+        filter: blur(40px);
         opacity: 0;
     }
 
-    38% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
+    100% {
+        transform: translateX(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
         opacity: 1;
     }
-
-    55% {
-        transform: translateY(-65px);
-        animation-timing-function: ease-in;
-    }
-
-    72% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-    }
-
-    81% {
-        transform: translateY(-28px);
-        animation-timing-function: ease-in;
-    }
-
-    90% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-    }
-
-    95% {
-        transform: translateY(-8px);
-        animation-timing-function: ease-in;
-    }
-
-    100% {
-        transform: translateY(0);
-        animation-timing-function: ease-out;
-    }
 }
 
 
 
-.video {
-    grid-column: 1/4;
-    grid-row: 1/4;
-    padding: 0;
-    margin: 0;
-    background-color: var(--color5);
 
+
+.nav-box {
+    font-family: 'Cantora One', sans-serif;
+    letter-spacing: 1px;
 
 }
 
-.video {
-    animation-name: video-move;
+.menu-flex {
+    /*div>ul*/
+    font-size: 20px;
+
+}
+
+#menu-nav-flex {
+    justify-content: flex-end;
+}
+
+
+.logo {
+
+    /*
+    position: relative;
+    bottom: -60px;*/
+
+    border-radius: 100%;
+    margin-top: 10px;
+    /*
+    animation-name: logo-move;
     animation-duration: 2s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;*/
+    border: 2px solid var(--color1);
+
+    transition: 1s;
+
 }
 
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
 
-@keyframes video-move {
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-7 2:29:26
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+/*
+
+@keyframes logo-move {
     0% {
-        transform: scale(.1);
-        transform: translate(700px, 1000px);
-        border-radius: 100%;
+        translate: -400px;
+        border: none;
+        transform: scale(.3)
+        
     }
 
     50% {
+        
         transform: scale(.5);
-        border-radius: 100%;
+    }
+
+    70% {
+        translate: 200px;
+       
+        
+    }
+
+    95% {
+        transform: scale(1.3);
+        
+        border: 7px solid var(--color1);
     }
 
     100% {
         transform: scale(1);
-        border-radius: 0;
+        border: 2px solid var(--color1);
+        rotate: 3turn;
     }
 }
+*/
 
-/*
-.video:hover {
-    cursor: none;
+.leyenda {
+    /*comida rica y autentica*/
+    color: #ccc;
+    font-family: 'Kalam', cursive;
+    margin: 15px 0;
 }
-*/
+
+.main-portada {
+    background-color: var(--color4);
+    text-align: center;
+}
+
+.video {
+    padding-left: 0;
+    padding-right: 0;
+
+
+}
+
+.portada-section {
+    justify-items: center;
+}
 
 
 
 
-/*********************SERVICIOS.HTML**************/
-/*Se conserva la estructura de main-container para 4 grillas
-    X | O O
-    X | O O
-    X | O O
-*/
 
-.servicios-container {
-    display: flex;
-    flex-wrap: wrap;
+.article {
+    /*parrafo en el footer*/
+    color: #ccc;
+    padding: 10px;
+    font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: var(--color4);
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid var(--color2);
+    margin-bottom: 10px;
+}
+
+.redes img {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.redes img {
     /*
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
-    border: 3px solid #b96e0b;
-    */
-    justify-content: start;
-    align-items: flex-start;
-
-
-
-
+    width: 90px;*/
+    opacity: 40%;
+    transition: .8s;
 }
 
-.titulo-servicios {
-
-    font-family: 'Ubuntu', sans-serif;
-    background-color: var(--color2);
-    border-radius: 0 50% 0 50%;
-    text-align: center;
-    line-height: .5;
-    font-family: 'Indie Flower', cursive;
-    font-size: 20px;
-    color: var(--color1);
-    margin: 0 auto;
-    padding: 5px;
-height: 30%;
-
+.redes img:hover {
+    /*ver animation*/
+    opacity: 100%;
+    transition: .3s;
+    transform: scale(1.3);
 }
-
-.titulo-servicios h1 {
-    font-size: 35px;
-    text-shadow: var(--color5) 5px 5px 5px;
-}
-
-.best-night {
-    font-size: 32px;
-    color: var(--color5);
-
-}
-
-.image {
-    width: 150px;
-    margin: 0 5px;
-    border-radius: 15%;
-    border: 3px solid var(--color5);
-    margin: 5px;
-}
-
-.image:hover {
-
-    cursor: zoom-in;
-
-
-}
-
-.image:active {
-    transform: scale(4);
-    transition: .7s;
-    border-radius: 5%;
-
-}
-
-.eventos {
-    margin: 15px;
-    padding: 8px;
-    width: 100%;
-    color: var(--color1);
-    text-align: center;
-}
-
-.eventos h3 {
-    font-size: 25px;
-    text-align: start;
-    border-bottom: var(--color5) 2px groove;
-    background-color:#c7262b;
-    border-radius: 0 100% 0 0;
-    margin: 2px;
-    padding-left: 5px;
-}
-
-
-
-
-
-/*
-
-  font-family: 'Akaya Telivigala', cursive;
-font-family: 'Anaheim', sans-serif;
-font-family: 'Caveat', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Noto Serif Oriya', serif;
-font-family: 'Ubuntu', sans-serif; 
-*/

@@ -1,73 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <title>MarchandoFoodCo</title>
+    <link rel="shortcut icon" href="../image/ico_marchando.png">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Anaheim&family=Caveat&family=Cinzel:wght@800&family=Indie+Flower&family=Noto+Serif+Oriya:wght@700&family=Ubuntu&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Buda&family=Cantora+One&family=Caveat:wght@500&family=Covered+By+Your+Grace&family=DM+Mono:wght@300&family=Halant&family=Jomhuria&family=Kalam&family=Tauri&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../image/ico_marchando.png">
 </head>
 
-<body>
-    <div class="fixed-box">
-        <header>
-            <img class="logo" src="../image/logo1-135px.jpg" width="160px" alt="Logo de Marchando">
-            <nav class="barra-nav">
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="eventos.html">Eventos</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <article class="article">
-            <p>Cocinamos con pasión y alegría, respetando a los alimentos y a nuestros clientes.
-            </p>
+<body class="container">
 
+    <header class="row top1">
 
-            <p>Te brindamos los mejores productos y atención, para que disfrutes un momento único.
-            </p>
-        </article>
-        <footer class="footer">
-            <div class="redes">
-                <a href="https://www.facebook.com/marchando.co/" target="_blank"><img src="../image/facebook.png"
-                        alt="Logo de Facebook" width="80px"></a>
-                <a href="https://www.instagram.com/marchando.co/?hl=es" target="_blank"><img
-                        src="../image/instagram.png" alt="Logo de Instagram" width="80px"></a>
-                <a href="https://mobile.twitter.com/marchandoco" target="_blank"><img src="../image/twitter.png"
-                        alt="Logo de Twitter" width="80px"></a>
+      
+        <nav class="col nav-box navbar navbar-expand-md navbar-dark bg-transparent">
+            <div class="container-fluid">
+                <div class="col presentacion slide-in-blurred-left">
+                    <h1 class="marchando">Marchando<h1>
+                            <h2 class="foodco">Food Co</h2>
+                </div>
+                <button class="boton-flex navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu-nav-flex">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse menu-flex" id="menu-nav-flex">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <main class="main-portada row">
 
-        </footer>
-    </div>
-
-    <main class="main-container">
-
-        <div class="titulo-servicios">
-            <h1>MarchandoFoodCo</h1>
-            <p class="best-night">Comida rica y auténtica</p>
-        </div>
-
-
-
-
-        <div class="eventos">
+        <div>EVENTOS</div>
+        <div class="col-md-6">
             <h3>Evento 1</h3>
             <img class="image" src="../image/11.jpg" alt="">
             <img class="image" src="../image/2.jpg" alt="">
@@ -75,13 +70,13 @@
             <img class="image" src="../image/4.jpg" alt="">
             <img class="image" src="../image/10.jpg" alt="">
         </div>
-        <div class="eventos">
+        <div class="col-md-6">
             <h3>Evento 2</h3>
             <img class="image" src="../image/6.jpg" alt="">
             <img class="image" src="../image/7.jpg" alt="">
             <img class="image" src="../image/5.jpg" alt="">
         </div>
-        <div class="eventos">
+        <div class="col-md-6">
             <h3>Evento 3</h3>
             <img class="image" src="./images/croc_salmon.jpg" alt="Crocantes de Salmon">
             <img class="image" src="./images/shot_postre.jpg" alt="Crocantes de Salmon">
@@ -90,11 +85,44 @@
         </div>
 
 
-        </div>
-        </section>
-        </section>
+        <section class="portada-section">
 
+            <a class="logo-box col navbar-brand" href="../index.html">
+                <img class="heartbeat logo img-fluid" src="../image/logo1-135px.jpg" width="180px" alt="Logo de Marchando Food Co">
+            </a>
+
+            <div class="leyenda">
+                <h2 class="leyenda">Comida rica y auténtica!</h2>
+            </div>
+        </section>
     </main>
+    <footer class="footer row">
+        <div class="col redes">
+            <a href="https://www.facebook.com/marchando.co/" target="_blank"><img class="img-fluid" src="../image/facebook.png"
+                    alt="Logo de Facebook" width="80px"></a>
+            <a href="https://www.instagram.com/marchando.co/?hl=es" target="_blank"><img class="img-fluid" src="../image/instagram.png"
+                    alt="Logo de Instagram" width="80px"></a>
+            <a href="https://mobile.twitter.com/marchandoco" target="_blank"><img class="img-fluid" src="../image/twitter.png"
+                    alt="Logo de Twitter" width="80px"></a>
+        </div>
+        <article class="col-md-7 article">
+            <p>"Cocinamos con pasión y alegría, respetando los alimentos y a nuestros clientes.
+                Te brindamos los mejores productos y atención, para un momento único"
+            </p>
+        </article>
+
+
+    </footer>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
+
+
