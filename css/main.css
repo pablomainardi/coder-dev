@@ -18,9 +18,10 @@ font-family: 'Tauri', sans-serif;
     --color1: #f9e9e7;
 }
 
-html {
+html , body {
     background-color: var(--color4);
 }
+
 
 *::selection {
     background-color: var(--color5);
@@ -255,6 +256,7 @@ font-family: 'Caveat', cursive;
 .video {
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
 
 
 }
