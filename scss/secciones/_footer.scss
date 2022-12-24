@@ -1,0 +1,52 @@
+.footer {
+    background-color: $color4;
+    text-align: center;
+    padding: 5px;
+    border-top: 3px solid $color2;
+    margin-bottom: 10px;
+
+    .article {
+        /*parrafo en el footer*/
+        color: #ccc;
+
+        font-family: 'Kalam', cursive;
+        font-size: 1.2rem;
+
+
+    }
+
+}
+
+
+.presentacion {
+    /*section con marchando food co y comida rica y autentica*/
+    text-align: center;
+    color: rgba(150, 30, 30, 1);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: rgb(245, 130, 20)0.125rem 0.125rem 0.312rem;
+
+    .foodco {
+        font-size: 20px;
+    }
+
+    .marchando {
+        font-size: 50px;
+        line-height: 1;
+    }
+}
+
+.redes img {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    opacity: 40%;
+    transition: .8s;
+    :hover {
+        /*ver animation*/
+        opacity: 100%;
+        transition: .3s;
+        transform: scale(1.3);
+    }
+}

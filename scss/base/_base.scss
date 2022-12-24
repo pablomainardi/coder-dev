@@ -1,0 +1,30 @@
+
+
+$color5: #303030;
+$color4: #111111;
+$color3: #e6a219;
+$color2: #c7262b;
+$color1: #f9e9e7;
+
+html,
+body {
+    background-color: $color4;
+
+    ::selection {
+        background-color: $color5;
+        color: $color4;
+    }
+}
+
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Buda', cursive;
+font-family: 'Cantora One', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'DM Mono', monospace;
+font-family: 'Halant', serif;
+font-family: 'Jomhuria', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Tauri', sans-serif;
+*/
