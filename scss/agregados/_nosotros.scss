@@ -1,16 +1,31 @@
-
 .somos {
-   
     padding: 15px 20px;
-    text-align: center;
+    align-items: center;
     p {
         color: $color1;
         padding-top: 30px;
         font-size: 20px;
     }
 }
+
 #frase {
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: $color2;
+    border-radius: 50%;
+    /*width: max-content;*/
+    padding: 10px 15px;
+    text-align: center;
+        a {
+            text-decoration: none;
+            color: $color1;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
 
-}
+    .box_imagen {
+        max-width: 350px;
+        height: auto;
+    }

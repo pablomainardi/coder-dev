@@ -4,19 +4,13 @@
     padding: 5px;
     border-top: 3px solid $color2;
     margin-bottom: 10px;
-
     .article {
         /*parrafo en el footer*/
         color: #ccc;
-
         font-family: 'Kalam', cursive;
         font-size: 1.2rem;
-
-
     }
-
 }
-
 
 .presentacion {
     /*section con marchando food co y comida rica y autentica*/
@@ -43,7 +37,7 @@
     padding: 3px;
     opacity: 40%;
     transition: .8s;
-    :hover {
+    &:hover {
         /*ver animation*/
         opacity: 100%;
         transition: .3s;

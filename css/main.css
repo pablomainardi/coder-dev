@@ -102,14 +102,14 @@ font-family: 'Tauri', sans-serif;
   position: relative;
   color: #f9e9e7;
   text-decoration: none; }
-  .hover-link a :after {
+  .hover-link a:after {
     content: "";
     display: block;
     margin: auto;
     height: 2px;
     width: 0px;
     transition: all .4s; }
-  .hover-link a :hover:after {
+  .hover-link a:hover:after {
     width: 100%;
     background: #f9e9e7; }
 
@@ -152,7 +152,7 @@ font-family: 'Tauri', sans-serif;
   padding: 3px;
   opacity: 40%;
   transition: .8s; }
-  .redes img :hover {
+  .redes img:hover {
     /*ver animation*/
     opacity: 100%;
     transition: .3s;
@@ -274,7 +274,7 @@ font-family: 'Tauri', sans-serif;
 
 .somos {
   padding: 15px 20px;
-  text-align: center; }
+  align-items: center; }
   .somos p {
     color: #f9e9e7;
     padding-top: 30px;
@@ -282,4 +282,18 @@ font-family: 'Tauri', sans-serif;
 
 #frase {
   font-size: 25px;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #c7262b;
+  border-radius: 50%;
+  /*width: max-content;*/
+  padding: 10px 15px;
+  text-align: center; }
+  #frase a {
+    text-decoration: none;
+    color: #f9e9e7; }
+    #frase a:hover {
+      font-weight: 700; }
+
+.box_imagen {
+  max-width: 350px;
+  height: auto; }
