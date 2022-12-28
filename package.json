@@ -1,7 +1,7 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto Final para el curso de Frontend en Coderhouse",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -181,7 +181,7 @@
     "type": "git",
     "url": "git+https://github.com/pablomainardi/coder.git"
   },
-  "author": "",
+  "author": "Pablo Mainardi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pablomainardi/coder/issues"

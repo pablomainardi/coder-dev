@@ -1,0 +1,27 @@
+.videoface {
+    border: 5px solid $color5;
+    iframe {
+        border: none;
+        overflow: hidden;
+    }
+}
+
+.textoserv {
+    background-color: $color1;
+    color: $color4;
+    font-size: 18px;
+    justify-content: center !important; 
+
+}
+
+.imagenes1 {
+ justify-content: center;
+ align-items: center;
+img {
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+}

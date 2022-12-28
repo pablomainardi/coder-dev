@@ -1,5 +1,3 @@
-
-
 .top1 {
     /*header*/
     height: max-content;
@@ -98,9 +96,27 @@
     }
 }
 
+.redes-top img {
+    padding: 5px;
+    opacity: 40%;
+    transition: .8s;
+
+    &:hover {
+        /*ver animation*/
+        opacity: 100%;
+        transition: .3s;
+    }
+}
+
+.barra-box {
+    padding-left: 20px;
+}
+
 .nav-box {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .hover-link a {
@@ -128,6 +144,6 @@
 #boton-flex-derecha {
     justify-content: flex-end;
     justify-items: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     font-size: 20px;
 }

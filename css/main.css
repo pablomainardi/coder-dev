@@ -1,6 +1,7 @@
 html,
 body {
-  background-color: #111111; }
+  background-color: #111111;
+  padding: 0 !important; }
   html ::selection,
   body ::selection {
     background-color: #303030;
@@ -93,9 +94,23 @@ font-family: 'Tauri', sans-serif;
     transform: scale(1);
     animation-timing-function: ease-out; } }
 
+.redes-top img {
+  padding: 5px;
+  opacity: 40%;
+  transition: .8s; }
+  .redes-top img:hover {
+    /*ver animation*/
+    opacity: 100%;
+    transition: .3s; }
+
+.barra-box {
+  padding-left: 20px; }
+
 .nav-box {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  align-content: flex-start; }
+  align-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start; }
 
 .hover-link a {
   display: inline-block;
@@ -117,7 +132,7 @@ font-family: 'Tauri', sans-serif;
 #boton-flex-derecha {
   justify-content: flex-end;
   justify-items: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
   font-size: 20px; }
 
 .footer {
@@ -130,7 +145,8 @@ font-family: 'Tauri', sans-serif;
     /*parrafo en el footer*/
     color: #ccc;
     font-family: 'Kalam', cursive;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    padding-top: 8px; }
 
 .presentacion {
   /*section con marchando food co y comida rica y autentica*/
@@ -172,6 +188,9 @@ font-family: 'Tauri', sans-serif;
 .form-group {
   margin-top: 3%;
   margin-bottom: 3%; }
+  .form-group .cuadrotxt {
+    width: 100%;
+    height: 150px; }
 
 .contact-form {
   background-image: url(../secciones/images/c-fondo.jpg);
@@ -218,27 +237,35 @@ font-family: 'Tauri', sans-serif;
   cursor: pointer; }
 
 .comentarios-box {
-  padding: 55px 0 0 0;
+  padding-top: 55px;
   background-image: url(../secciones/images/c-fondo.jpg);
   height: max-content;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
   .comentarios-box .comentarios {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    margin: 10px auto; }
 
 .link-reviews {
   background-color: #111111;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
-  padding: 3px; }
+  padding: 3px;
+  margin: 0 20px auto;
+  width: max-content; }
   .link-reviews a {
     color: #c7262b;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none; }
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px; }
+    .link-reviews a:hover {
+      background-color: #f9e9e7;
+      color: #111111;
+      font-weight: 500; }
 
 .photo-gallery {
   color: #f9e9e7;
@@ -297,3 +324,25 @@ font-family: 'Tauri', sans-serif;
 .box_imagen {
   max-width: 350px;
   height: auto; }
+
+.videoface {
+  border: 5px solid #303030; }
+  .videoface iframe {
+    border: none;
+    overflow: hidden; }
+
+.textoserv {
+  background-color: #f9e9e7;
+  color: #111111;
+  font-size: 18px;
+  justify-content: center !important; }
+
+.imagenes1 {
+  justify-content: center;
+  align-items: center; }
+  .imagenes1 img {
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    padding: 5px; }

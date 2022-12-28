@@ -9,12 +9,13 @@ $color1: #f9e9e7;
 html,
 body {
     background-color: $color4;
-
+padding: 0 !important;
     ::selection {
         background-color: $color5;
         color: $color4;
     }
 }
+
 
 /*
 font-family: 'Architects Daughter', cursive;
