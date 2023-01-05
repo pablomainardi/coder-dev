@@ -1,16 +1,27 @@
+port-serv {
+    justify-content: center;
+    
+}
 .videoface {
-    border: 5px solid $color5;
+    text-align: center;
+    width: max-content;
+
     iframe {
         border: none;
         overflow: hidden;
+        border: 3px solid $color2;
+        border-radius: 15px;
     }
+    
 }
+a {text-decoration: none;}
+
 
 .textoserv {
-    background-color: $color1;
-    color: $color4;
+    width: 75%;
+    color: $color1;
     font-size: 18px;
-    justify-content: center !important; 
+    
 
 }
 

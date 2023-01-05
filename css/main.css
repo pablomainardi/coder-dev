@@ -177,7 +177,11 @@ font-family: 'Tauri', sans-serif;
 .video {
   padding-left: 0;
   padding-right: 0;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+.main-portada {
+  height: 75vh; }
 
 /*seccion contacto*/
 .form-all {
@@ -325,17 +329,25 @@ font-family: 'Tauri', sans-serif;
   max-width: 350px;
   height: auto; }
 
+main {
+  justify-content: center; }
+
 .videoface {
-  border: 5px solid #303030; }
+  text-align: center;
+  width: max-content; }
   .videoface iframe {
     border: none;
-    overflow: hidden; }
+    overflow: hidden;
+    border: 3px solid #c7262b;
+    border-radius: 15px; }
+
+a {
+  text-decoration: none; }
 
 .textoserv {
-  background-color: #f9e9e7;
-  color: #111111;
-  font-size: 18px;
-  justify-content: center !important; }
+  width: 75%;
+  color: #f9e9e7;
+  font-size: 18px; }
 
 .imagenes1 {
   justify-content: center;
