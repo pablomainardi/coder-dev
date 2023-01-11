@@ -69,40 +69,4 @@
     cursor: pointer;
 }
 
-.comentarios-box {
-    padding-top:  55px;
-    background-image: url(../secciones/images/c-fondo.jpg);
-    height: max-content;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    text-align: center;
-    justify-content: center;
 
-    .comentarios {
-        padding-left: 0;
-        padding-right: 0;
-        margin: 10px auto;
-    }
-}
-
-.link-reviews {
-    background-color: $color4;
-    text-align: center;
-    font-size: 18px;
-    padding: 3px;
-    margin: 0 20px auto;
-    width: max-content;
-
-    a {
-        color: $color2;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-decoration: none;
-        letter-spacing: 1px;
-        &:hover {
-            background-color: $color1;
-            color:$color4;
-            font-weight: 500;
-        }
-    }
-}

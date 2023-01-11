@@ -1,0 +1,90 @@
+.link-reviews {
+    
+    text-align: center;
+    font-size: 18px;
+background-color: $color5;
+    
+
+    a {
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: $color4;
+        &:hover {
+            background-color: $color4;
+            color:$color5;
+           
+        }
+    }
+}
+
+.opi-box {
+    border: 3px solid $color5;
+min-height:200px ;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+.opi-txt {
+    color: $color1;
+    text-align: center;
+    padding: 40px;
+ 
+    
+}
+ /*
+.opox1 {
+    background-image: url(../../secciones/images/opi-cherrie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox2 {
+    background-image: url(../../secciones/images/opi-merme.jpg);
+   
+}
+
+.opox3 {
+    background-image: url(../../secciones/images/opi-panes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox4 {
+    background-image: url(../../secciones/images/opi-pinchos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox5 {
+    background-image: url(../../secciones/images/opi-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox6 {
+    background-image: url(../../secciones/images/opi-tapas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/*
+.comentarios-box {
+    padding-top:  55px;
+    background-image: url(../secciones/images/c-fondo.jpg);
+    height: max-content;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+
+    .comentarios {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 10px auto;
+    }
+}
+
+*/

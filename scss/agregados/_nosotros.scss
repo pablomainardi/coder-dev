@@ -1,6 +1,15 @@
+.cent-main {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .somos {
-    padding: 15px 20px;
+    /*padding: 15px 20px;*/
     align-items: center;
+    text-align: center;
+
     p {
         color: $color1;
         padding-top: 30px;
@@ -9,23 +18,33 @@
 }
 
 #frase {
-    font-size: 25px;
+    font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: $color2;
-    border-radius: 50%;
-    /*width: max-content;*/
-    padding: 10px 15px;
+    border-radius: 10px;
+    width: max-content;
+    padding: 8px 8px;
     text-align: center;
-        a {
-            text-decoration: none;
-            color: $color1;
-            &:hover {
-                font-weight: 700;
-            }
+    font-weight: 600;
+
+    a {
+        text-decoration: none;
+        color: $color1;
+        transition: .5s;
+
+        &:hover {
+            padding: 0px 40px;
+            transition: .5s;
+
         }
     }
+}
 
-    .box_imagen {
-        max-width: 350px;
-        height: auto;
-    }
+.box_imagen {
+    max-width: 350px;
+    height: auto;
+}
+
+.marg-t-b {
+    margin: 10px auto;
+}

@@ -240,37 +240,6 @@ font-family: 'Tauri', sans-serif;
   border: none;
   cursor: pointer; }
 
-.comentarios-box {
-  padding-top: 55px;
-  background-image: url(../secciones/images/c-fondo.jpg);
-  height: max-content;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: center;
-  justify-content: center; }
-  .comentarios-box .comentarios {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 10px auto; }
-
-.link-reviews {
-  background-color: #111111;
-  text-align: center;
-  font-size: 18px;
-  padding: 3px;
-  margin: 0 20px auto;
-  width: max-content; }
-  .link-reviews a {
-    color: #c7262b;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: none;
-    letter-spacing: 1px; }
-    .link-reviews a:hover {
-      background-color: #f9e9e7;
-      color: #111111;
-      font-weight: 500; }
-
 .photo-gallery {
   color: #f9e9e7;
   background-color: #111111; }
@@ -303,58 +272,183 @@ font-family: 'Tauri', sans-serif;
 .photo-gallery .item {
   padding: 5px !important; }
 
+.cent-main {
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto; }
+
 .somos {
-  padding: 15px 20px;
-  align-items: center; }
+  /*padding: 15px 20px;*/
+  align-items: center;
+  text-align: center; }
   .somos p {
     color: #f9e9e7;
     padding-top: 30px;
     font-size: 20px; }
 
 #frase {
-  font-size: 25px;
+  font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: #c7262b;
-  border-radius: 50%;
-  /*width: max-content;*/
-  padding: 10px 15px;
-  text-align: center; }
+  border-radius: 10px;
+  width: max-content;
+  padding: 8px 8px;
+  text-align: center;
+  font-weight: 600; }
   #frase a {
     text-decoration: none;
-    color: #f9e9e7; }
+    color: #f9e9e7;
+    transition: .5s; }
     #frase a:hover {
-      font-weight: 700; }
+      padding: 0px 40px;
+      transition: .5s; }
 
 .box_imagen {
   max-width: 350px;
   height: auto; }
 
-main {
-  justify-content: center; }
+.marg-t-b {
+  margin: 10px auto; }
+
+@media (min-width: 1200px) {
+  .videoface iframe {
+    height: 310px;
+    width: 50%; } }
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .videoface iframe {
+    height: 260px;
+    width: 50%; } }
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .videoface iframe {
+    height: 190px;
+    width: 50%; } }
+
+@media (max-width: 767px) {
+  .videoface iframe {
+    height: 290px;
+    width: 100%; } }
+
+port-serv {
+  justify-content: center;
+  text-align: center; }
 
 .videoface {
-  text-align: center;
-  width: max-content; }
+  /*width="450" height="252"*/
+  display: flex; }
   .videoface iframe {
-    border: none;
-    overflow: hidden;
-    border: 3px solid #c7262b;
-    border-radius: 15px; }
-
-a {
-  text-decoration: none; }
+    border-radius: 35px;
+    margin: 10px auto; }
 
 .textoserv {
-  width: 75%;
   color: #f9e9e7;
-  font-size: 18px; }
+  font-size: 18px;
+  text-align: center; }
 
-.imagenes1 {
+.img1-box {
   justify-content: center;
-  align-items: center; }
-  .imagenes1 img {
+  align-items: center;
+  text-align: center; }
+  .img1-box img {
     border-radius: 15px;
     width: 300px;
     height: auto;
     margin: 5px;
     padding: 5px; }
+
+.link-reviews {
+  text-align: center;
+  font-size: 18px;
+  background-color: #303030; }
+  .link-reviews a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #111111; }
+    .link-reviews a:hover {
+      background-color: #111111;
+      color: #303030; }
+
+.opi-box {
+  border: 3px solid #303030;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.opi-txt {
+  color: #f9e9e7;
+  text-align: center;
+  padding: 40px; }
+
+/*
+.opox1 {
+    background-image: url(../../secciones/images/opi-cherrie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox2 {
+    background-image: url(../../secciones/images/opi-merme.jpg);
+   
+}
+
+.opox3 {
+    background-image: url(../../secciones/images/opi-panes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox4 {
+    background-image: url(../../secciones/images/opi-pinchos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox5 {
+    background-image: url(../../secciones/images/opi-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opox6 {
+    background-image: url(../../secciones/images/opi-tapas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/*
+.comentarios-box {
+    padding-top:  55px;
+    background-image: url(../secciones/images/c-fondo.jpg);
+    height: max-content;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+
+    .comentarios {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 10px auto;
+    }
+}
+
+*/
+.opox1 {
+  background-image: url(); }
+
+.opox2 {
+  background-image: url(../secciones/images/opi-merme.jpg); }
+
+.opox3 {
+  background-image: url(../secciones/images/opi-panes.jpg); }
+
+.opox4 {
+  background-image: url(../secciones/images/opi-pinchos.jpg); }
+
+.opox5 {
+  background-image: url(../secciones/images/opi-pizza.jpg); }
+
+.opox6 {
+  background-image: url(../secciones/images/opi-tapas.jpg); }
